@@ -1,0 +1,97 @@
+:root{--page-width:390px;--text:#171717}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#111;color:var(--text);font-family:Arial,Helvetica,sans-serif}
+.page{width:100%;max-width:var(--page-width);margin:0 auto;background:#fff;overflow:hidden;box-shadow:0 0 30px rgba(0,0,0,.35)}
+img{max-width:100%;height:auto;display:block}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;height:710px;background:#fff;overflow:hidden;text-align:center}
+.hero-bg{position:absolute;inset:0;width:100%;height:710px;object-fit:cover;object-position:center top}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:190px;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff 86%);z-index:1;pointer-events:none}
+.hero-heart{position:absolute;z-index:3;top:18px;left:17px;width:38px;height:38px;image-rendering:pixelated}
+.menu-toggle{position:absolute;z-index:10;top:20px;right:18px;width:34px;height:34px;padding:0;border:0;background:transparent;cursor:pointer}
+.menu-toggle span{display:block;height:4px;margin:5px 0;border-radius:3px;background:#fff;box-shadow:1px 1px 1px #000}
+.menu-panel{position:absolute;z-index:9;top:64px;right:14px;width:205px;padding:12px;background:rgba(0,0,0,.94);border-radius:8px;display:none;text-align:left}
+.menu-panel.show{display:block}
+.menu-panel a{display:block;padding:9px 7px;color:#fff;text-decoration:none;font-size:12px;border-bottom:1px solid #555}
+.menu-panel a:last-child{border-bottom:0}
+.hero-title,.hero-sub{position:relative;z-index:3;margin:0;color:#fff;text-shadow:2px 2px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000}
+.hero-title{padding-top:150px;font-size:40px;line-height:1;font-weight:900}
+.hero-sub{margin-top:7px;font-size:16px;font-weight:800}
+.hero-copy{position:relative;z-index:3;width:304px;margin:185px auto 0;color:#fff;text-shadow:1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000;font-size:13px;line-height:1.18;font-weight:600}
+.hero-copy p{margin:0 0 24px}
+.hero-copy strong{font-weight:900}
+
+/* ---------- DELTARUNE ---------- */
+.deltarune{padding:22px 26px 36px;background:#fff}
+.deltarune h2{margin:0 0 11px;text-align:center;font-size:19px;line-height:1.1;font-weight:900}
+.deltarune .logo{width:300px;margin:0 auto 15px}
+.deltarune p{margin:0 0 14px;font-size:13px;line-height:1.25;font-weight:700}
+.deltarune .wide{width:304px;margin:0 auto 13px}
+
+/* ---------- AU CARDS ---------- */
+.au-section{position:relative;padding:27px 0 45px;background:#181818 url('../IMG/23-fondo-underverse.jpg') center top/100% auto repeat-y}
+.au-section:before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.88) 0,rgba(0,0,0,.18) 160px,rgba(0,0,0,.10) 100%);pointer-events:none}
+.au-inner{position:relative;z-index:1}
+.au-section h2{margin:0 0 72px;color:#fff;text-align:center;font-size:19px;line-height:1.1;font-weight:900;text-shadow:1px 1px 2px #000}
+.au-card{width:364px;margin:0 auto 70px;padding:10px 27px 27px;background:#fff;border-radius:9px;box-shadow:0 2px 5px rgba(0,0,0,.28)}
+.au-card h3{margin:0 0 10px;text-align:center;font-size:20px;line-height:1;font-weight:900}
+.au-card img{width:310px;max-width:100%;height:auto;margin:0 auto 13px;object-fit:contain}
+.au-card p{margin:0;font-size:16px;line-height:1.28;font-weight:400}
+.au-card:last-child{margin-bottom:0}
+
+/* ---------- UNDERVERSE ---------- */
+.underverse{padding:34px 22px 0;background:#fff}
+.underverse h2{margin:0;text-align:center;font-size:25px;line-height:1.08;font-weight:900}
+.underverse .poster{width:348px;margin:27px auto 20px}
+.underverse .intro,.underverse .main-copy{margin:0 18px 58px;font-size:16px;line-height:1.25;font-weight:700}
+.underverse .scene{width:348px;margin:0 auto 32px}
+.underverse .main-copy{margin-top:0;margin-bottom:66px}
+.anomalies-heading{margin:0 0 135px!important;font-size:23px!important}
+.anomaly{margin:0 0 82px}
+.anomaly h3{margin:0 0 17px;text-align:center;font-size:23px;line-height:1;font-weight:500}
+.anomaly img{width:348px;margin:0 auto 32px}
+.anomaly p{margin:0 18px;font-size:16px;line-height:1.24;font-weight:700}
+
+/* ---------- FACTS ---------- */
+.facts{padding-top:10px}
+.facts-title{margin:0 0 66px!important;font-size:24px!important}
+.fact{margin-bottom:51px}
+.fact h3{margin:0 0 11px;text-align:center;font-size:26px;line-height:1.08;font-weight:900}
+.fact img{width:348px;margin:0 auto 19px}
+.fact p{margin:0 1px;font-size:16px;line-height:1.22;font-weight:700}
+
+
+/* ---------- FINAL BLOCKS ---------- */
+.final-block{margin-bottom:69px}
+.final-block h2{margin-bottom:24px;font-size:25px;line-height:1.1}
+.final-block img{width:348px;margin:0 auto 20px}
+.final-block p{margin:0 1px;font-size:16px;line-height:1.22;font-weight:700}
+
+
+/* ---------- FOOTER ---------- */
+.site-footer{margin-top:0;min-height:690px;background:linear-gradient(to bottom,#eee 0,#ddd 8%,#05052e 24%,#000 39%),url('../IMG/11-doodle-sphere.jpg') center bottom/cover no-repeat;color:#fff;text-shadow:1px 1px 1px #000;padding-top:24px}
+.footer-heart{width:42px;margin:0 auto 25px;image-rendering:pixelated}
+.socials{display:flex;justify-content:center;gap:18px;margin-bottom:42px}
+.socials a{color:#fff;text-decoration:none;font-size:27px;line-height:1}
+.footer-columns{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:0 24px}
+.footer-columns h4{margin:0 0 12px;font-size:18px}
+.footer-columns p{margin:0 0 10px;font-size:16px}
+
+@media(max-width:389px){
+ .hero{height:auto;min-height:calc(710px * (100vw / 390))}.hero-bg{height:calc(710px * (100vw / 390))}
+ .hero-heart{top:4.6vw;left:4.4vw;width:9.7vw;height:9.7vw}.menu-toggle{top:5.1vw;right:4.6vw;width:8.7vw}
+ .hero-title{padding-top:38.5vw;font-size:10.25vw}.hero-sub{font-size:4.1vw}.hero-copy{width:78vw;margin-top:47.4vw;font-size:3.33vw}
+ .deltarune{padding-left:6.7vw;padding-right:6.7vw}.deltarune h2{font-size:4.87vw}.deltarune .logo,.deltarune .wide{width:78vw}.deltarune p{font-size:3.33vw}
+ .au-card{width:93.3vw;padding-left:6.9vw;padding-right:6.9vw}.au-card img{width:79.5vw}.au-card p{font-size:4.1vw}
+ .underverse{padding-left:5.6vw;padding-right:5.6vw}.underverse .poster,.underverse .scene,.anomaly img,.fact img,.final-block img{width:89.2vw}.underverse .intro,.underverse .main-copy,.anomaly p,.fact p,.final-block p{font-size:4.1vw}.underverse h2{font-size:6.4vw}.anomalies-heading,.facts-title{font-size:5.9vw!important}.anomaly h3{font-size:5.9vw}.fact h3,.final-block h2{font-size:6.67vw}
+ .footer-columns p{font-size:4.1vw}.footer-columns h4{font-size:4.6vw}
+}
+
+.imagen-spotify {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
